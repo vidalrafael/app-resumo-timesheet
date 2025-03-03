@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Upload</title>
+</head>
+<body>
+    <h1>Upload CSV File</h1>
+    <form method="post" enctype="multipart/form-data" action="/uploadTimeSheetCsv">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+    <p th:if="${message}" th:text="${message}"></p>
+
+    <form method="post" action="/teste">
+        <button type="submit">Teste</button>
+    </form>
+
+</body>
+</html>
